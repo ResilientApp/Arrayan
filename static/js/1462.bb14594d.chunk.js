@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarrayan=self.webpackChunkarrayan||[]).push([[1462],{1462:function(a,e,n){n.r(e),n.d(e,{updateWobble:function(){return i}});var o=n(4709),t=0,l=2*Math.PI,r=60;function i(a,e){var n,i=a.options.wobble,b=a.wobble;if(null!==i&&void 0!==i&&i.enable&&b){var c=b.angleSpeed*e.factor,s=b.moveSpeed*e.factor*((null!==(n=a.retina.wobbleDistance)&&void 0!==n?n:t)*e.factor)/(o.X5/r),u=l,f=a.position;b.angle+=c,b.angle>u&&(b.angle-=u),f.x+=s*Math.cos(b.angle),f.y+=s*Math.abs(Math.sin(b.angle))}}}}]);
+//# sourceMappingURL=1462.bb14594d.chunk.js.map
