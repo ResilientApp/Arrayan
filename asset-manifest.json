@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2daed66d.css",
-    "main.js": "/static/js/main.d1238f4d.js",
+    "main.css": "/static/css/main.a1e53337.css",
+    "main.js": "/static/js/main.dcb58cff.js",
     "static/js/7633.acd08c34.chunk.js": "/static/js/7633.acd08c34.chunk.js",
     "static/js/6225.34b1f514.chunk.js": "/static/js/6225.34b1f514.chunk.js",
     "static/js/7858.941294d5.chunk.js": "/static/js/7858.941294d5.chunk.js",
@@ -137,13 +137,12 @@
     "static/media/field.png": "/static/media/field.41171ff14d3ab2853efd.png",
     "static/media/nucleo.eot": "/static/media/nucleo.bd5cce8bf40be5947637.eot",
     "static/media/nucleo.ttf": "/static/media/nucleo.35b08447277ca7bf9f09.ttf",
-    "static/media/waves.png": "/static/media/waves.ac46eaefac136824e252.png",
     "static/media/nucleo.woff": "/static/media/nucleo.5c65ef4d6434bb8062a3.woff",
     "static/media/nucleo.woff2": "/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
     "static/media/resilientlogo.png": "/static/media/resilientlogo.531653c7a9c3569e7573.png",
     "index.html": "/index.html",
-    "main.2daed66d.css.map": "/static/css/main.2daed66d.css.map",
-    "main.d1238f4d.js.map": "/static/js/main.d1238f4d.js.map",
+    "main.a1e53337.css.map": "/static/css/main.a1e53337.css.map",
+    "main.dcb58cff.js.map": "/static/js/main.dcb58cff.js.map",
     "7633.acd08c34.chunk.js.map": "/static/js/7633.acd08c34.chunk.js.map",
     "6225.34b1f514.chunk.js.map": "/static/js/6225.34b1f514.chunk.js.map",
     "7858.941294d5.chunk.js.map": "/static/js/7858.941294d5.chunk.js.map",
@@ -261,7 +260,7 @@
     "3585.43567c19.chunk.js.map": "/static/js/3585.43567c19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2daed66d.css",
-    "static/js/main.d1238f4d.js"
+    "static/css/main.a1e53337.css",
+    "static/js/main.dcb58cff.js"
   ]
 }
