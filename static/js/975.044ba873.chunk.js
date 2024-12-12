@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarrayan=self.webpackChunkarrayan||[]).push([[975],{975:(a,t,e)=>{async function n(a){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];await a.addParticleUpdater("rotate",(async a=>{const{RotateUpdater:t}=await e.e(8751).then(e.bind(e,8751));return new t(a)}),t)}e.d(t,{loadRotateUpdater:()=>n})}}]);
+//# sourceMappingURL=975.044ba873.chunk.js.map

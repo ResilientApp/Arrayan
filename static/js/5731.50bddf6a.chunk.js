@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarrayan=self.webpackChunkarrayan||[]).push([[5731],{5731:(a,e,r)=>{async function t(a){var e;let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const n=a,{EmittersSquareShapeGenerator:s}=await r.e(865).then(r.bind(r,865));null===(e=n.addEmitterShapeGenerator)||void 0===e||e.call(n,"square",new s),await n.refresh(t)}r.d(e,{loadEmittersShapeSquare:()=>t})}}]);
+//# sourceMappingURL=5731.50bddf6a.chunk.js.map

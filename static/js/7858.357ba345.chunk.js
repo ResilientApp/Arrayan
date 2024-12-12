@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarrayan=self.webpackChunkarrayan||[]).push([[7858],{7858:(a,e,n)=>{async function t(a){let e=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];await a.addParticleUpdater("roll",(async()=>{const{RollUpdater:a}=await n.e(4042).then(n.bind(n,4042));return new a}),e)}n.d(e,{loadRollUpdater:()=>t})}}]);
+//# sourceMappingURL=7858.357ba345.chunk.js.map
