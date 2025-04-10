@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarrayan=self.webpackChunkarrayan||[]).push([[251],{251:function(r,a,n){n.r(a),n.d(a,{drawSquare:function(){return e}});var t=Math.sqrt(2),u=2;function e(r){var a=r.context,n=r.radius/t,e=n*u;a.rect(-n,-n,e,e)}}}]);
+//# sourceMappingURL=251.c5775282.chunk.js.map
