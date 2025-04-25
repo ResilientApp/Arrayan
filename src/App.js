@@ -9,7 +9,6 @@ import ContactusPage from "./pages/ContactUsPage";
 import SupplyChainPage from "./pages/SupplyChainPage";
 import SmartContract from "./pages/SmartContract";
 import MyContractPage from "./pages/MyContractPage";
-import Privacy from './pages/Privacy';
 function App() {
   return ( 
     
@@ -25,7 +24,6 @@ function App() {
               <Route exact path="/track" element={<SupplyChainPage/>} />
               <Route exact path="/smartcontract" element={<SmartContract/>} />
               <Route exact path="/my-contracts" element={<MyContractPage/>} />
-              <Route path="/privacy" element={<Privacy />} />
               {/* <Route path="/" component={Dashboard} /> */}
             </Routes>
           </AuthProvider>
