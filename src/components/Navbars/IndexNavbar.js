@@ -154,6 +154,15 @@ export default function IndexNavbar() {
                 <p className="font-weight-bold">Contact Us</p>
               </NavLink>
             </NavItem>
+            <NavItem className="p-0">
+                  <NavLink
+                    data-placement="bottom"
+                    tag={Link} to="/team"
+                  >
+                    <i className="tim-icons icon-user-run" />
+                    <p className="font-weight-bold">Team</p>
+                  </NavLink>
+                </NavItem>
             {
               currentUser==null?
             <UncontrolledDropdown nav>
