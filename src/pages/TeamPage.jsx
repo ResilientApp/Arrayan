@@ -15,22 +15,6 @@ const head_software_architect = [
         // role: "Head Software Architect",
         // email: "",
     },];
-const currentMembers = [
-    {
-        name: "Juan Perez",
-        role: "Developer",
-        email: "juan@example.com",
-        linkedin: "https://linkedin.com/in/juanperez",
-        img: "https://ui-avatars.com/api/?name=Juan+Perez&background=0D8ABC&color=fff",
-    },
-    {
-        name: "Ana Gómez",
-        role: "Designer",
-        email: "ana@example.com",
-        linkedin: "https://linkedin.com/in/anagomez",
-        img: "https://ui-avatars.com/api/?name=Ana+Gomez&background=0D8ABC&color=fff",
-    },
-];
 
 const pastMembers = [
     {
@@ -116,11 +100,7 @@ const expert_guidance = [
     }
 ];
 
-const technical_support = [
-    {
-        name: "Expolab",
-    }
-];
+
 
 const iconStyle = {
     width: "24px",
@@ -270,7 +250,6 @@ const TeamPage = () => {
         }}>
             <AnimatedCrystalBackground />
             <div style={{ position: "relative", zIndex: 2 }}>
-                <br />
                 <h1 style={{
                     textAlign: "center",
                     marginTop: "5rem",
@@ -282,42 +261,6 @@ const TeamPage = () => {
                     // textShadow: "0 2px 16px #2b6cf6"
                 }}>TEAM</h1></div><br /><br />
             <div style={{ position: "relative", zIndex: 2 }}>
-                <h2 style={{
-                    color: "#fff",
-                    marginBottom: "2rem",
-                    textAlign: "center",
-                    fontSize: "2rem",
-                    letterSpacing: "2px",
-                    // fontWeight: "bold",
-                    // textShadow: "0 1px 8px #2b6cf6"
-                }}>FOUNDER</h2>
-                <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
-                    <MemberCard member={founder} />
-                </div>
-
-                <br />
-                <h2 style={{
-                    color: "#fff",
-                    marginBottom: "1rem",
-                    textAlign: "center",
-                    fontSize: "1.7rem",
-                    marginTop: "8rem",
-                    letterSpacing: "2px",
-                    // fontWeight: "bold",
-                    // textShadow: "0 1px 8px #2b6cf6"
-                }}>HEAD SOFTWARE ARCHITECT</h2>
-                <div style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "2rem",
-                    justifyContent: "center"
-                }}>
-                    {head_software_architect.map(member => <MemberCard key={member.email} member={member} />)}
-                </div>
-
-                <br /><br /><br />
-
-
                 <div style={{
                     display: "flex",
                     flexWrap: "wrap",
@@ -326,6 +269,21 @@ const TeamPage = () => {
                     alignItems: "flex-start",
                     marginBottom: "3rem"
                 }}>
+                    <div style={{ flex: "1 1 300px", minWidth: "280px" }}>
+                        <h2 style={{
+                            color: "#fff",
+                            marginBottom: "1rem",
+                            textAlign: "center",
+                            fontSize: "1.7rem",
+                            letterSpacing: "2px",
+                            // fontWeight: "bold",
+                            // textShadow: "0 1px 8px #2b6cf6"
+                        }}>FOUNDER</h2>
+                        <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
+                            <MemberCard member={founder} />
+                        </div>
+                    </div>
+
                     {/* Expert Guidance */}
                     <div style={{ flex: "1 1 300px", minWidth: "280px" }}>
                         <h2 style={{
@@ -344,25 +302,33 @@ const TeamPage = () => {
                             {expert_guidance.map(member => <MemberCard key={member.email || member.name} member={member} />)}
                         </div>
                     </div>
-                    {/* Technical Support */}
-                    <div style={{ flex: "1 1 300px", minWidth: "280px" }}>
-                        <h2 style={{
-                            color: "#fff",
-                            marginBottom: "1rem",
-                            textAlign: "center",
-                            fontSize: "1.7rem",
-                            letterSpacing: "2px",
-                        }}>TECHNICAL SUPPORT</h2>
-                        <div style={{
-                            display: "flex",
-                            flexWrap: "wrap",
-                            gap: "2rem",
-                            justifyContent: "center"
-                        }}>
-                            {technical_support.map(member => <MemberCard key={member.email || member.name} member={member} />)}
-                        </div>
-                    </div>
+
                 </div>
+
+
+                <h2 style={{
+                    color: "#fff",
+                    marginBottom: "1rem",
+                    textAlign: "center",
+                    fontSize: "1.7rem",
+                    // marginTop: "8rem",
+                    letterSpacing: "2px",
+                    // fontWeight: "bold",
+                    // textShadow: "0 1px 8px #2b6cf6"
+                }}>HEAD SOFTWARE ARCHITECT</h2>
+                <div style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "2rem",
+                    justifyContent: "center"
+                }}>
+                    {head_software_architect.map(member => <MemberCard key={member.email} member={member} />)}
+                </div>
+
+                <br /><br /><br />
+
+
+
                 <br /><br />
                 <h3 style={{
                     textAlign: "center",
