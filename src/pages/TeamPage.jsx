@@ -1,11 +1,11 @@
 import React from "react";
-
+import website_img from "../assets/img/globe.png";
 
 const founder = {
     name: "Mariana Larrañaga Tapia",
-    // role: "Founder",
+    role: "Founder and CEO",
     // email: "mariana@example.com",
-    // linkedin: "https://linkedin.com/in/mariana",
+    linkedin: "https://www.linkedin.com/in/malata/",
     // img: "https://ui-avatars.com/api/?name=Mariana&background=0D8ABC&color=fff",
 };
 
@@ -14,39 +14,46 @@ const head_software_architect = [
         name: "Amoolya Gali (Former Member) ",
         // role: "Head Software Architect",
         // email: "",
-    },];
+        linkedin: "https://www.linkedin.com/in/gali-amoolya/",
+    }];
 
 const pastMembers = [
     {
         name: "Shravani Shete ",
-        // role: "Past Developer",
+        // role: "Former Developer",
         // email: "carlos@example.com",
-        // linkedin: "https://linkedin.com/in/carlosruiz",
+        linkedin: "https://www.linkedin.com/in/shravani-shete-104818177/",
         // img: "https://ui-avatars.com/api/?name=Carlos+Ruiz&background=0D8ABC&color=fff",
     },
     {
         name: "Tarun Tiwari",
-        // role: "Past Designer",
+        // role: "Former Developer",
         // email: "",
+        linkedin: "https://www.linkedin.com/in/tarun1219/",
     },
     {
         name: "Manali Modi",
-        // role: "Past Developer",
+        // role: "Former Developer",
         // email: "",
+        linkedin: "https://www.linkedin.com/in/manali4/",
     },
     {
         name: "Srishti Singh",
-        // role: "Past Developer",
+        // role: "Former Developer",
         // email: "",
+        linkedin: "https://www.linkedin.com/in/srishti-singh-165b08190/",
     }
 ];
 
 const second_gen_members = [
     {
-        name: "Vrushali Harane\n(Former member) ",
+        name: "Vrushali Harane (Former member)",
+        // role: "Former Developer",
+        linkedin: "https://www.linkedin.com/in/vrushaliharane/",
     },
     {
         name: "Kunjal Agrawal ",
+        linkedin: "https://www.linkedin.com/in/kunjal-agrawal-8b5848206/",
 
     }
 ];
@@ -54,42 +61,48 @@ const second_gen_members = [
 const business_team = [
     {
         name: "Isabella Campos",
-        role: "Science Lead",
+        linkedin: "https://www.linkedin.com/in/isabella-campos-127579229/",
     },
     {
         name: "Victor Martinez-Cortes",
-        role: "Design Consultant",
+        linkedin: "https://www.linkedin.com/in/vmartic/",
     }
 ];
 
 const former_collaborators = [
     {
         name: "Sarah Natividad",
-        role: "Co-founder 2021-2023",
+        linkedin: "",
     },
     {
         name: "Daniela Nishimoto",
         role: "Zero Waste Restaurant 2021",
+        linkedin: "",
     },
     {
         name: "Ariadna Melo",
         role: "Zero Waste Restaurant 2021",
+        linkedin: "https://www.linkedin.com/in/ariadnamelo/",
     },
     {
         name: "Andrea Medina",
         role: "Green Business 2022-2023",
+        linkedin: "",
     },
     {
         name: "Erin Robinson",
         role: "Intern 2024",
+        linkedin: "https://www.linkedin.com/in/erinorobinson/",
     },
     {
         name: "Nicholas Mckenna",
         role: "Business Consultant 2024",
+        linkedin: "https://www.linkedin.com/in/njmck/",
     },
     {
         name: "Sushmitha Kala",
         role: "Business Consultant 2024",
+        linkedin: "",
     }
 ];
 
@@ -97,6 +110,7 @@ const expert_guidance = [
     {
         name: "Dr. Mohammad Sadoghi",
         role: "Director EXPOLAB, UC Davis",
+        linkedin: "https://www.linkedin.com/in/mohammad-sadoghi/",
     }
 ];
 
@@ -116,11 +130,11 @@ const MemberCard = ({ member }) => (
             padding: "2rem",
             minWidth: "240px",
             maxWidth: "300px",
-            background: "rgba(55, 70, 102, 0.35)", // semi-transparent blue
+            background: "rgba(55, 70, 102, 0.35)",
             boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-            backdropFilter: "blur(8px)", // frosted glass effect
+            backdropFilter: "blur(8px)",
             WebkitBackdropFilter: "blur(8px)",
-            border: "1.5px solid rgba(255, 255, 255, 0.18)", // crystal border
+            border: "1.5px solid rgba(255, 255, 255, 0.18)",
             textAlign: "center",
             cursor: "pointer",
             color: "#fff",
@@ -137,7 +151,6 @@ const MemberCard = ({ member }) => (
             e.currentTarget.style.boxShadow = "0 8px 32px 0 rgba(31, 38, 135, 0.37)";
         }}
     >
-
         <h2 style={{
             margin: "0.5rem 0",
             color: "#fff",
@@ -147,17 +160,19 @@ const MemberCard = ({ member }) => (
             position: "relative",
             zIndex: 2
         }}>{member.name}</h2>
-        {/* <p style={{
-            margin: "0.5rem 0",
-            color: "#e0e7ff",
-            fontWeight: "500",
-            fontSize: "1rem",
-            position: "relative",
-            zIndex: 2
-        }}>
-            <strong>Role:</strong> {member.role}
-        </p> */}
-        {/* <div style={{ margin: "1rem 0", position: "relative", zIndex: 2 }}>
+        {member.role && (
+            <p style={{
+                margin: "0.5rem 0",
+                color: "#e0e7ff",
+                fontWeight: "500",
+                fontSize: "1rem",
+                position: "relative",
+                zIndex: 2
+            }}>
+                <strong>Role:</strong> {member.role}
+            </p>
+        )}
+        <div style={{ margin: "1rem 0", position: "relative", zIndex: 2 }}>
             <a href={member.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
@@ -170,19 +185,27 @@ const MemberCard = ({ member }) => (
                     }}
                 />
             </a>
-            <a href={`mailto:${member.email}`} title="Email">
-                <img
-                    src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/email.svg"
-                    alt="Email"
-                    style={{
-                        width: "24px",
-                        height: "24px",
-                        marginRight: "8px",
-                        verticalAlign: "middle"
-                    }}
-                />
-            </a>
-        </div> */}
+            {/* Professor's website link */}
+            {member.name === "Dr. Mohammad Sadoghi" && (
+                <a
+                    href="https://expolab.resilientdb.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Professor's Website"
+                    style={{ marginLeft: "8px" }}
+                >
+                    <img
+                        src={website_img}
+                        alt="Website"
+                        style={{
+                            width: "24px",
+                            height: "24px",
+                            verticalAlign: "middle"
+                        }}
+                    />
+                </a>
+            )}
+        </div>
     </div>
 );
 
